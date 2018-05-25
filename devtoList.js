@@ -26,36 +26,6 @@ let fs = require('fs');
 //     }, (error) => console.log(err));
 
 
-// axios.get('http://games.espn.com/flb/freeagency?leagueId=691&teamId=8&seasonId=2018')
-//     .then((response) => {
-//         if (response.status === 200) {
-//             const html = response.data;
-//             const $ = cheerio.load(html);
-//             let playerArray = [];
-//             let statArray = [];
-//             $('.pncPlayerRow').each(function (i, elem) {
-//                 playerArray[i] = {
-//                     player: $(this).find('.playertablePlayerName').text().trim(),
-//                     h_ab: $(this).find('.playertableStat').eq(0).text(),
-//                     r: $(this).find('.playertableStat').eq(1).text(),
-//                     hr: $(this).find('.playertableStat').eq(2).text(),
-//                     rbi: $(this).find('.playertableStat').eq(3).text(),
-//                     sb: $(this).find('.playertableStat').eq(4).text(),
-//                     avg: $(this).find('.playertableStat').eq(5).text(),
-//                     ops: $(this).find('.playertableStat').eq(6).text(),
-//                     research: $(this).find('.playertableData').text().trim(),
-//                     // tags: $(this).find('.tags').text().split('#')
-//                     //     .map(tag => tag.trim())
-//                     //     .filter(function (n) { return n != "" })
-//                 }
-//             });
-//             const playerArrayTrimmed = playerArray.filter(n => n != undefined)
-//             console.log (playerArrayTrimmed);
-//             fs.writeFile('players.json',
-//                 JSON.stringify(playerArrayTrimmed, null, 4),
-//                 (err) => console.log('File successfully written!'))
-//         }
-//     }, (error) => console.log(err));
 
 // axios.get("http://games.espn.com/flb/freeagency?leagueId=691&teamId=8&seasonId=2018&version=currSeason&slotCategoryGroup=2&startIndex=50")
 //     .then((response) => {
